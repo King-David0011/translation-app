@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollyGlot Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="images/parrot.png" alt="PollyGlot parrot">
+            <div class="title">
+                <h1>PollyGlot</h1>
+                <p>Perfect Translation Every Time</p>
+            </div>
+        </header>
+
+        <section class="card">
+            <div id="chat-box">
+                <p class="message bot">Squawk! I'm Polly. Chat with me or ask me to translate something. 🦜</p>
+            </div>
+
+            <div class="input-row">
+                <input type="text" id="user-input" placeholder="Type a message...">
+                <button id="send-btn">Send</button>
+            </div>
+
+            <button id="clear-btn">Clear Chat</button>
+        </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
