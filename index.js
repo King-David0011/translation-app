@@ -1,4 +1,4 @@
-const url = "https://api.groq.com/openai/v1/chat/completions"
+const url = "/api/chat"
 
 const chatBox = document.getElementById("chat-box")
 const userInput = document.getElementById("user-input")
@@ -41,14 +41,10 @@ async function sendMessage() {
     const response = await fetch(url, {
         method: "POST",
         headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${apiKey}`
+            "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            model: "openai/gpt-oss-120b",
-            messages: messages,
-            temperature: 0.7,
-            max_tokens: 1000
+            messages: messages
         })
     })
     const data = await response.json()
